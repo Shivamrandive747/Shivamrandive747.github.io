@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shivam Randive · Machine Learning for Materials</title>
+  <meta name="description" content="Shivam Randive: Integrated M.Sc. Physics student at SVNIT Surat and research intern at NIMS, Tsukuba. Machine learning for materials prediction, tested against first-principles calculations and experiment.">
+  <meta name="author" content="Shivam Randive">
+  <meta property="og:title" content="Shivam Randive · Machine Learning for Materials">
+  <meta property="og:description" content="Graph neural networks, machine-learned interatomic potentials and high-throughput DFT for thermoelectric materials.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://shivamrandive747.github.io/">
+  <meta property="og:image" content="https://shivamrandive747.github.io/assets/heusler-screening-overview.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231B3A5C'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3ESR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shivam Randive",
+    "url": "https://shivamrandive747.github.io/",
+    "image": "https://shivamrandive747.github.io/assets/photo.jpg",
+    "email": "mailto:i22ph019@phy.svnit.ac.in",
+    "affiliation": [
+      {"@type": "CollegeOrUniversity", "name": "Sardar Vallabhbhai National Institute of Technology, Surat"},
+      {"@type": "ResearchOrganization", "name": "National Institute for Materials Science (NIMS), Tsukuba"}
+    ],
+    "knowsAbout": ["Machine learning for materials", "Graph neural networks", "Machine-learned interatomic potentials", "Density functional theory", "Thermoelectric materials"],
+    "sameAs": ["https://github.com/Shivamrandive747", "https://orcid.org/0009-0005-1403-4484"]
+  }
+  </script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Shivam Randive</a>
+    <nav>
+      <a href="#direction">Direction</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#journey">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="assets/Shivam_Randive_CV.pdf" class="nav-cv">CV ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============================== HERO ============================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <div class="id">
+          <img class="photo" src="assets/photo.jpg" alt="Portrait of Shivam Randive" width="600" height="600">
+          <div>
+            <h1>Shivam Randive</h1>
+            <p class="affil">Integrated M.Sc. Physics · SVNIT Surat, India</p>
+          </div>
+        </div>
+
+        <p class="kicker">Machine learning for materials prediction</p>
+        <p class="statement">I build machine-learning models that predict the properties of materials, and test
+          whether their predictions hold up against first-principles calculations and experiment.</p>
+
+        <dl class="status">
+          <div><dt>Now</dt><dd>Research intern, <a href="https://www.nims.go.jp/eng/">NIMS</a>, Tsukuba, Japan</dd></div>
+          <div><dt>Next</dt><dd>Semester exchange, IIT Delhi</dd></div>
+          <div><dt>Seeking</dt><dd>PhD positions in ML for materials</dd></div>
+        </dl>
+
+        <div class="buttons">
+          <a class="btn primary" href="assets/Shivam_Randive_CV.pdf">Download CV</a>
+          <a class="btn" href="mailto:i22ph019@phy.svnit.ac.in">Email</a>
+          <a class="btn" href="https://github.com/Shivamrandive747">GitHub</a>
+          <a class="btn" href="https://orcid.org/0009-0005-1403-4484">ORCID</a>
+        </div>
+      </div>
+
+      <figure class="crystal">
+        <canvas class="crystal-canvas" width="460" height="460"
+                aria-label="Rotating ball-and-stick model of the half-Heusler compound ZrNiSn" role="img"></canvas>
+        <figcaption>
+          <span class="legend"><span><i style="--c:#94e0e0"></i>Zr</span><span><i style="--c:#50d050"></i>Ni</span><span><i style="--c:#668080"></i>Sn</span></span>
+          <span>ZrNiSn, a half-Heusler thermoelectric (C1<sub>b</sub>). Drag to rotate.</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- latest preprint -->
+    <div class="wrap">
+      <div class="latest">
+        <span class="latest-label">Latest preprint</span>
+        <a class="latest-title" href="https://doi.org/10.48550/arXiv.2610.18179">High-throughput screening of Heusler alloys
+          for thermoelectrics combining machine-learned densities of states and first-principles transport</a>
+        <span class="latest-meta"><b>S. Randive</b>, R. Dixit, H. Pandey · arXiv, Oct 2026 ·
+          <a class="doi" href="https://doi.org/10.48550/arXiv.2610.18179">doi:10.48550/arXiv.2610.18179</a></span>
+        <span class="latest-actions">
+          <button type="button" class="link-btn" data-copy="doi">Copy DOI</button>
+          <button type="button" class="link-btn" data-copy="bibtex">Copy BibTeX</button>
+          <a href="https://arxiv.org/pdf/2610.18179">PDF</a>
+          <a href="https://github.com/yednaph/heusler-dos-te-screening">Code</a>
+          <span class="copied" role="status" aria-live="polite"></span>
+        </span>
+      </div>
+
+      <div class="figures">
+        <div><b>2</b><span>first-author papers<br>(1 preprint, 1 manuscript)</span></div>
+        <div><b>106,235</b><span>Heusler structures<br>screened with ML</span></div>
+        <div><b>3,625</b><span>first-principles transport<br>calculations run</span></div>
+        <div><b>4</b><span>research institutions<br>in India and Japan</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== NEWS ============================== -->
+  <section class="wrap section news-section" id="news" aria-label="News">
+    <div class="news">
+      <span class="news-label">News</span>
+      <div class="carousel" aria-roledescription="carousel" aria-live="off">
+        <div class="track">
+          <p class="slide"><time>Sep 2026</time>Started a research internship in the Spin Theory Group of Prof. Terumasa Tadano at NIMS, Tsukuba,
+            on transfer learning of machine-learned interatomic potentials.</p>
+          <p class="slide"><time>Oct 2026</time>Preprint on ML-guided thermoelectric screening posted:
+            <a href="https://doi.org/10.48550/arXiv.2610.18179">arXiv:2610.18179</a>.</p>
+          <p class="slide"><time>Oct 2026</time>Code and data for the thermal-conductivity calibration paper released on
+            <a href="https://doi.org/10.5281/zenodo.23333947">Zenodo</a>.</p>
+          <p class="slide"><time>Jan 2027</time>Joining IIT Delhi for a semester as an exchange student.</p>
+          <p class="slide"><time>2025</time>Awarded the IASc Summer Research Fellowship (SRFP) at the S. N. Bose
+            National Centre for Basic Sciences, Kolkata.</p>
+        </div>
+      </div>
+      <div class="news-nav">
+        <button type="button" class="arrow" data-dir="-1" aria-label="Previous news item">‹</button>
+        <span class="news-count" aria-hidden="true">1 / 5</span>
+        <button type="button" class="arrow" data-dir="1" aria-label="Next news item">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== DIRECTION ============================== -->
+  <section class="wrap section" id="direction">
+    <h2>Research direction</h2>
+    <p class="lead">Machine learning can predict a material's properties in milliseconds instead of hours of
+      computation. My work asks when those predictions can be trusted, and builds the checks that tell.</p>
+    <ol class="themes">
+      <li>
+        <span class="theme-n">1</span>
+        <h3>Generalization</h3>
+        <p>Does a model hold up on chemistry it has never seen? Out-of-distribution testing of graph neural networks,
+          and transfer of pretrained interatomic potentials to new properties.</p>
+      </li>
+      <li>
+        <span class="theme-n">2</span>
+        <h3>Screening</h3>
+        <p>Can a cheap ML signal decide which materials deserve an expensive calculation? Judged against thousands of
+          first-principles transport calculations.</p>
+      </li>
+      <li>
+        <span class="theme-n">3</span>
+        <h3>Experiment</h3>
+        <p>Do calculations agree with measurement? Finding and correcting the bias that ML surrogates inherit from the
+          calculations they are trained on.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============================== RESEARCH ============================== -->
+  <section class="wrap section" id="research">
+    <h2>Research</h2>
+
+    <!-- NIMS: direction only -->
+    <article class="project">
+      <p class="project-meta"><span class="tag current">Current</span>NIMS, Tsukuba · Spin Theory Group of Prof. Terumasa Tadano · Sep – Dec 2026</p>
+      <h3 class="headline">Discovering new alkali- and alkaline-earth Heusler thermoelectrics with pretrained AI models.</h3>
+      <p class="summary">New Heusler compositions built combinatorially and ranked by their predicted Seebeck
+        coefficient and lattice thermal conductivity, using transfer learning from pretrained machine-learned
+        interatomic potentials.</p>
+      <details>
+        <summary>The idea</summary>
+        <ul>
+          <li>Universal interatomic potentials are pretrained on over a hundred million DFT calculations to predict
+            energies and forces; to do that, their inner layers must already encode each atom's chemical
+            environment.</li>
+          <li>The direction: reuse those learned representations for transport properties, following the
+            frozen-transfer-learning approach of Xiao and Tadano (<i>npj Comput. Mater.</i> 2026).</li>
+          <li>Two architectures: eSEN (equivariant convolution) and EquiformerV3 (equivariant attention).</li>
+        </ul>
+        <p class="note">Work in progress.</p>
+      </details>
+    </article>
+
+    <!-- Paper 1 -->
+    <article class="project">
+      <p class="project-meta"><span class="tag">Preprint</span>SVNIT Surat · 2026 ·
+        <a href="https://doi.org/10.48550/arXiv.2610.18179">arXiv:2610.18179</a> ·
+        <a href="https://github.com/yednaph/heusler-dos-te-screening">code</a></p>
+      <h3 class="headline">The density of states can choose what to calculate; only a band structure shows whether a
+        gap exists.</h3>
+      <p class="summary">ML-predicted densities of states for 106,235 Heusler structures, used as a thermoelectric
+        screen and judged against 3,625 first-principles transport calculations.</p>
+      <div class="numbers">
+        <div><b>≈4×</b><span>fewer DFT runs per confirmed candidate</span></div>
+        <div><b>80</b><span>candidates found, 61 never measured</span></div>
+        <div><b>10 / 11</b><span>known half-Heusler thermoelectrics pass the same checks</span></div>
+        <div><b>0.15</b><span>gap recall of ML spectra, hidden by high correlation</span></div>
+      </div>
+      <details>
+        <summary>How it works</summary>
+        <figure class="paper-fig">
+          <img src="assets/heusler-screening-overview.png" width="1191" height="690" loading="lazy"
+               alt="Workflow: 106,235 DXMag Heusler entries split into a 51,257-entry training set with DFT densities of states and a 54,978-entry prediction set whose densities of states are predicted by ALIGNN.">
+          <figcaption>Fig. 1 of the preprint: DFT spectra train the models, which predict spectra for the structures
+            that have none; both sets go through the same screen and the same transport checks.</figcaption>
+        </figure>
+        <ul>
+          <li>Trained 30 ALIGNN graph neural networks on 51,257 DFT d-orbital spectra (H100 GPUs); held-out Pearson
+            <i>r</i> = 0.90 against 0.49–0.61 for baselines.</li>
+          <li>A Seebeck indicator read from the spectrum ranks the compounds; Quantum ESPRESSO + BoltzTraP2
+            calculations, including 607 spin–orbit reruns, decide which pass.</li>
+          <li>Calculating only the top fifth by the indicator cuts DFT runs per confirmed candidate from about 21 to
+            5.5, while keeping three quarters of them.</li>
+          <li>Wrote the whole first-principles workflow, including a BoltzTraP2 patch for spin–orbit runs.</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- Paper 2 -->
+    <article class="project">
+      <p class="project-meta"><span class="tag muted">Manuscript</span>SVNIT Surat · 2026 ·
+        <a href="https://doi.org/10.5281/zenodo.23333947">data &amp; code</a></p>
+      <h3 class="headline">Published calculations overestimate measured thermal conductivity by a median 1.69×.
+        Correcting that lets ML predict experiment.</h3>
+      <p class="summary">A provenance-tracked corpus of lattice thermal conductivity for half-Heuslers, a
+        calculation-to-experiment correction, and an ML model validated against measurement.</p>
+      <div class="numbers">
+        <div><b>33%</b><span>median error vs. 46–47% for baselines</span></div>
+        <div><b>9,495</b><span>κ<sub>L</sub> values for 960 compounds</span></div>
+        <div><b>101 → 37%</b><span>error of an independent ML force field, corrected</span></div>
+        <div><b>10</b><span>testable predictions with 90% intervals</span></div>
+      </div>
+      <details>
+        <summary>How it works</summary>
+        <ul>
+          <li>Built the corpus from five databases and the literature, including 1,178 multimodal-LLM (Gemini 2.5)
+            extractions, each gated by physical checks.</li>
+          <li>Showed that published calculations exceed measurement in 29 of 34 half-Heuslers; a two-parameter
+            transfer function corrects it.</li>
+          <li>CatBoost surrogate plus correction, validated with each chemistry withheld from training, for cubic
+            18-electron compounds; the typical error matches the spread between two laboratories.</li>
+        </ul>
+      </details>
+    </article>
+
+    <!-- SRFP -->
+    <article class="project">
+      <p class="project-meta"><span class="tag muted">Report</span>S. N. Bose Centre, Kolkata · SRFP 2025 ·
+        <a href="https://drive.google.com/file/d/1dD-fT1N9dyx78ICVK90nR-8M5JnDo-rm/view?usp=sharing">report</a></p>
+      <h3 class="headline">High accuracy on familiar data is not discovery.</h3>
+      <p class="summary">Specialist graph neural networks fell from over 92% to about 48% accuracy on unseen double
+        perovskites; a broadly pretrained model held about 80%.</p>
+      <details>
+        <summary>How it works</summary>
+        <ul>
+          <li>Built an end-to-end ALIGNN pipeline, from CIF files to atom and line graphs to training and inference.</li>
+          <li>Compared a pretrained general model with two specialists on metallicity classification of an
+            out-of-distribution set; traced the gap to the breadth of training data.</li>
+          <li>Supervised by Prof. Tanusri Saha-Dasgupta.</li>
+        </ul>
+      </details>
+    </article>
+
+    <div class="project-pair">
+      <article class="project">
+        <p class="project-meta"><span class="tag muted">Project</span>SVNIT · 2025 ·
+          <a href="https://drive.google.com/file/d/1rd77ryVKYCl4dzaDe2QpezefqtLPjPC3/view?usp=sharing">report</a></p>
+        <h3 class="headline small">Physical descriptors as a first predictor of materials properties.</h3>
+        <p class="summary">A support-vector classifier for perovskite formability (≈90% accuracy) and a reproduced
+          Gaussian-process model of lattice constants for 137 half-Heusler compounds.</p>
+      </article>
+      <article class="project">
+        <p class="project-meta"><span class="tag muted">Internship</span>IIT Bhilai · 2024 ·
+          <a href="https://drive.google.com/file/d/1M_lOCsnlSuaVTfAMZrHsLm-JbuOtV_dY/view?usp=sharing">report</a></p>
+        <h3 class="headline small">Mechanical strain as a dial for electronic properties.</h3>
+        <p class="summary">COMSOL finite-element model of a silicon film on a polyimide substrate for stretchable
+          electronics; the strain fields fed DFT calculations by a collaborator.</p>
+      </article>
+    </div>
+
+    <p class="next"><b>Next steps:</b> high-throughput Phonopy/Phono3py thermal conductivity for the screened
+      candidates, and property-conditioned crystal generation with diffusion models (MatterGen).</p>
+  </section>
+
+  <!-- ============================== PUBLICATIONS ============================== -->
+  <section class="wrap section" id="publications">
+    <h2>Publications &amp; reports</h2>
+    <ol class="pubs">
+      <li>
+        <p class="pub-title">High-throughput screening of Heusler alloys for thermoelectrics combining machine-learned
+          densities of states and first-principles transport</p>
+        <p class="pub-authors"><b>S. Randive</b>, R. Dixit, H. Pandey</p>
+        <p class="pub-venue">Preprint, arXiv:2610.18179 [cond-mat.mtrl-sci] (2026) ·
+          <a href="https://doi.org/10.48550/arXiv.2610.18179">DOI</a> ·
+          <a href="https://arxiv.org/pdf/2610.18179">PDF</a> ·
+          <a href="https://github.com/yednaph/heusler-dos-te-screening">Code</a></p>
+      </li>
+      <li>
+        <p class="pub-title">Predicting the experimental lattice thermal conductivity of half-Heusler compounds by
+          machine learning and transfer-function calibration</p>
+        <p class="pub-authors"><b>S. Randive</b>*, O. Randive, H. Lungaria, H. Pandey* <span class="muted">(*corresponding)</span></p>
+        <p class="pub-venue">Manuscript, to be submitted to <i>Computational Materials Science</i> (2026) ·
+          <a href="https://doi.org/10.5281/zenodo.23333947">Data &amp; code</a> ·
+          <a href="https://github.com/Shivamrandive747/half-heusler-kappa-calibration">GitHub</a></p>
+      </li>
+      <li>
+        <p class="pub-title">Generalization versus specialization in atomistic graph neural networks: a case study on
+          perovskite metallicity prediction using ALIGNN</p>
+        <p class="pub-authors"><b>S. Randive</b>, H. Pandey, T. Saha-Dasgupta</p>
+        <p class="pub-venue">SRFP research report, S. N. Bose National Centre for Basic Sciences (2025) ·
+          <a href="https://drive.google.com/file/d/1dD-fT1N9dyx78ICVK90nR-8M5JnDo-rm/view?usp=sharing">Report</a></p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============================== EXPERIENCE ============================== -->
+  <section class="wrap section" id="journey">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li>
+        <time>2024</time>
+        <h3>IIT Bhilai</h3>
+        <p>Summer research intern · finite-element modelling</p>
+      </li>
+      <li>
+        <time>2025 –</time>
+        <h3>SVNIT Surat</h3>
+        <p>Student researcher · Dr. Himanshu Pandey</p>
+      </li>
+      <li>
+        <time>2025</time>
+        <h3>S. N. Bose Centre, Kolkata</h3>
+        <p>SRFP fellow · Prof. Tanusri Saha-Dasgupta</p>
+      </li>
+      <li class="is-now">
+        <time>Sep – Dec 2026</time>
+        <h3>NIMS, Tsukuba, Japan</h3>
+        <p>Research intern · Spin Theory Group of Prof. Terumasa Tadano</p>
+      </li>
+      <li class="is-next">
+        <time>Jan 2027</time>
+        <h3>IIT Delhi</h3>
+        <p>Semester exchange student</p>
+      </li>
+    </ol>
+    <p class="degree"><b>Integrated M.Sc. (5-year BS–MS) in Physics</b>, Sardar Vallabhbhai National Institute of
+      Technology (SVNIT), Surat, 2022 – 2027 · CGPA 8.30 / 10</p>
+  </section>
+
+  <!-- ============================== CODE + SKILLS ============================== -->
+  <section class="wrap section" id="skills">
+    <h2>Code &amp; skills</h2>
+    <div class="repos">
+      <a class="repo" href="https://github.com/yednaph/heusler-dos-te-screening">
+        <span class="repo-name">heusler-dos-te-screening</span>
+        <span>ALIGNN density-of-states models, screening indicators and an automated Quantum ESPRESSO + BoltzTraP2
+          workflow. Sole developer.</span>
+      </a>
+      <a class="repo" href="https://github.com/Shivamrandive747/half-heusler-kappa-calibration">
+        <span class="repo-name">half-heusler-kappa-calibration</span>
+        <span>Rebuilds the thermal-conductivity corpus and reproduces every figure and prediction of the paper.</span>
+      </a>
+    </div>
+    <dl class="skills">
+      <dt>Machine learning</dt>
+      <dd>PyTorch, DGL, ALIGNN, eSEN and EquiformerV3 (fairchem), scikit-learn, CatBoost, LightGBM, Gaussian
+        processes, conformal prediction, SHAP</dd>
+      <dt>First principles</dt>
+      <dd>Quantum ESPRESSO (PBE, spin–orbit), BoltzTraP2, Phonopy/Phono3py, pymatgen, spglib</dd>
+      <dt>Materials data</dt>
+      <dd>Materials Project, AFLOW, JARVIS, OQMD, DXMag, Starrydata, OPTIMADE</dd>
+      <dt>Computing</dt>
+      <dd>Python, Linux, SLURM GPU clusters, Git, COMSOL, LaTeX</dd>
+    </dl>
+  </section>
+
+  <!-- ============================== BEYOND + CONTACT ============================== -->
+  <section class="wrap section" id="beyond">
+    <h2>Beyond research</h2>
+    <ul class="beyond">
+      <li><b>Rocketry.</b> Best Structural Stability and Flight award (3rd overall), national competition at IIT
+        Mandi, 2025.</li>
+    </ul>
+  </section>
+
+  <section class="wrap section" id="contact">
+    <div class="contact">
+      <div>
+        <h2>Contact</h2>
+        <p>I am glad to discuss research and PhD opportunities.</p>
+      </div>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:i22ph019@phy.svnit.ac.in">i22ph019@phy.svnit.ac.in</a>
+        <a class="btn" href="assets/Shivam_Randive_CV.pdf">CV (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Shivam Randive</span>
+  <span>Last updated October 2026</span>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
