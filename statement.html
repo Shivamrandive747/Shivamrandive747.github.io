@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Statement · Shivam Randive</title>
+  <meta name="description" content="Research statement of Shivam Randive: machine learning for materials discovery whose predictions can be checked against first-principles calculations and experiment.">
+  <meta name="author" content="Shivam Randive">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231B3A5C'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='white' text-anchor='middle'%3ESR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">Shivam Randive</a>
+    <nav>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="assets/Research_Statement.pdf">Statement PDF ↓</a>
+      <a href="assets/Shivam_Randive_CV.pdf" class="nav-cv">CV ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap rs">
+  <header class="rs-head">
+    <p class="kicker">Research statement</p>
+    <h1>Machine learning for materials discovery, checked against reality</h1>
+    <p class="rs-byline"><b>Shivam Randive</b> · Integrated M.Sc. Physics, SVNIT Surat · Research intern, NIMS, Japan ·
+      October 2026</p>
+  </header>
+
+  <section>
+    <h2>The question</h2>
+    <p>Machine learning can now predict a material's properties in milliseconds, and screening hundreds of thousands of
+      hypothetical compounds has become routine. But a prediction helps discovery only if we know when to trust it, and
+      the materials we most want, with new chemistry or unusual properties, are exactly where models have seen the least
+      data. One question runs through all my work: <em>when an ML prediction replaces an expensive calculation or a
+      measurement, does the conclusion survive the check?</em> I study it in thermoelectrics, where the key properties,
+      the Seebeck coefficient and the lattice thermal conductivity (κ<sub>L</sub>), are costly to compute and hard to
+      measure, and where the Heusler family offers a large, chemically rich space to search.</p>
+  </section>
+
+  <section>
+    <h2>What I have learned so far</h2>
+    <ol class="rs-lessons">
+      <li><b>Accuracy on familiar data is not discovery.</b> In my Summer Research Fellowship at the S. N. Bose Centre
+        (2025), graph neural networks trained on narrow perovskite families scored above 92% on familiar data but about
+        48% on unseen double perovskites, while a broadly pretrained model kept about 80%. The breadth of the training
+        data, not the test score, decided whether a model generalized.</li>
+      <li><b>A cheap ML signal can choose what to calculate, but not what is true.</b> I trained 30 ALIGNN models to
+        predict the density of states (DOS) of 54,978 Heusler structures and judged a DOS-based screen against 3,625
+        first-principles transport calculations from my own Quantum ESPRESSO + BoltzTraP2 workflow
+        [<a href="https://doi.org/10.48550/arXiv.2610.18179">P1</a>]. The screen needed about four times fewer
+        calculations per confirmed candidate and gave 80 candidate thermoelectrics, 61 never measured. Yet the
+        predicted spectra missed most band gaps (recall 0.15) despite a held-out correlation of <i>r</i> = 0.90:
+        standard metrics hid the failure that mattered most for the physics.</li>
+      <li><b>Models inherit the bias of the data they learn from.</b> I showed that published calculations overestimate
+        the measured κ<sub>L</sub> of half-Heuslers by a median 1.69× [P2]. I built a source-tracked dataset of 9,495
+        values for 960 compounds, partly extracted from the literature by multimodal language models with every value
+        physics-checked, and a two-parameter correction from calculation to experiment. For cubic 18-electron
+        compounds, ML predictions of measured κ<sub>L</sub> reached a 33% median error against 46–47% for baselines,
+        close to the disagreement between two laboratories.</li>
+    </ol>
+    <p>Both studies are first-author papers, now submitted, and their code and data are public.</p>
+  </section>
+
+  <section>
+    <h2>Now</h2>
+    <p>At NIMS, Japan, in the Spin Theory Group of Prof. Terumasa Tadano, I am asking whether universal machine-learned
+      interatomic potentials, pretrained on millions of DFT calculations, already encode what is needed to predict
+      transport. Using frozen transfer learning, I am applying them to new alkali- and alkaline-earth-metal Heusler
+      compositions built combinatorially, and ranking these by predicted Seebeck coefficient and lattice thermal
+      conductivity.</p>
+  </section>
+
+  <section>
+    <h2>What I want to do in a PhD</h2>
+    <ol class="rs-future">
+      <li><b>Foundation models beyond energies and forces.</b> How far do the representations learned by universal
+        potentials transfer to phonon, thermal and electronic-transport properties, and how can we tell when they do
+        not?</li>
+      <li><b>Uncertainty that measures discovery, not interpolation.</b> Prediction intervals and benchmarks built on
+        genuinely new chemistries and structure types, so that a screening campaign can state how many of its
+        candidates will survive DFT and experiment.</li>
+      <li><b>Closing the loop.</b> Property-conditioned generative models propose crystals, calibrated surrogates and
+        first-principles calculations filter them, and measurements correct the surrogates. This is the loop that
+        autonomous laboratories depend on, and it works only if every step can be trusted.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>What I bring</h2>
+    <p>I have worked across the whole chain: curating data from databases and the literature, training graph neural
+      networks and interatomic potentials on GPU clusters, running high-throughput DFT and transport workflows, and
+      comparing the results with experiment. I release the code and data with every project, and I have mentored two
+      junior students who are co-authors on [P2]. I am looking for a group that combines machine learning with
+      first-principles theory or experiment, where a prediction counts when it leads to a real material.</p>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <span><a href="index.html">← Back to the main page</a></span>
+  <span><a href="mailto:i22ph019@phy.svnit.ac.in">i22ph019@phy.svnit.ac.in</a></span>
+</footer>
+</body>
+</html>
