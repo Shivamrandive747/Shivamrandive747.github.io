@@ -186,11 +186,11 @@
       <details>
         <summary>The idea</summary>
         <ul>
-          <li>Universal interatomic potentials are pretrained on over a hundred million DFT calculations to predict
+          <li>Universal machine-learned interatomic potentials (MLIPs) are pretrained on over a hundred million DFT calculations to predict
             energies and forces; to do that, their inner layers must already encode each atom's chemical
             environment.</li>
-          <li>The direction: keep the pretrained network frozen and train a small model on its inner features,
-            finding which layers, and which design (convolution or attention), best capture transport.</li>
+          <li>The approach: apply frozen transfer learning to these MLIPs on phonon force data, and predict
+            lattice thermal conductivity through a Phonopy and Phono3py pipeline.</li>
           <li>Two architectures: eSEN (equivariant convolution) and EquiformerV3 (equivariant attention).</li>
         </ul>
         <p class="note">Work in progress.</p>
