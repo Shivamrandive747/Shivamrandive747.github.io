@@ -189,8 +189,8 @@
           <li>Universal interatomic potentials are pretrained on over a hundred million DFT calculations to predict
             energies and forces; to do that, their inner layers must already encode each atom's chemical
             environment.</li>
-          <li>The direction: reuse those learned representations for transport properties, following the
-            frozen-transfer-learning approach of Xiao and Tadano (<i>npj Comput. Mater.</i> 2026).</li>
+          <li>The direction: keep the pretrained network frozen and train a small model on its inner features,
+            finding which layers, and which design (convolution or attention), best capture transport.</li>
           <li>Two architectures: eSEN (equivariant convolution) and EquiformerV3 (equivariant attention).</li>
         </ul>
         <p class="note">Work in progress.</p>
