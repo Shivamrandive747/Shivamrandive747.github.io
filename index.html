@@ -66,8 +66,8 @@
         </div>
 
         <p class="kicker">AI for science · machine learning for materials</p>
-        <p class="statement">I build machine-learning models that predict the properties of materials, and test
-          whether their predictions hold up against first-principles calculations and experiment.</p>
+        <p class="statement">I use machine learning and first-principles calculations to discover new Heusler
+          thermoelectrics, materials that convert a temperature difference directly into electrical power.</p>
 
         <dl class="status">
           <div><dt>Now</dt><dd>Research intern, <a href="https://www.nims.go.jp/eng/">NIMS</a>, Tsukuba, Japan</dd></div>
@@ -148,26 +148,29 @@
   <!-- ============================== DIRECTION ============================== -->
   <section class="wrap section" id="direction">
     <h2>Research direction</h2>
-    <p class="lead">Machine learning can predict a material's properties in milliseconds instead of hours of
-      computation. My work asks when those predictions can be trusted, and builds the checks that tell.</p>
+    <p class="lead">A good thermoelectric needs a high Seebeck coefficient and a low lattice thermal
+      conductivity, and my work addresses both, step by step.</p>
     <ol class="themes">
       <li>
         <span class="theme-n">1</span>
-        <h3>Generalization</h3>
-        <p>Does a model hold up on chemistry it has never seen? Out-of-distribution testing of graph neural networks,
-          and transfer of pretrained interatomic potentials to new properties.</p>
+        <h3>Find candidates</h3>
+        <p>I screened over 100,000 Heusler structures with ML and confirmed the best with first-principles
+          transport calculations, finding 80 promising candidates, 61 never studied experimentally
+          [<a href="#publications">P1</a>].</p>
       </li>
       <li>
         <span class="theme-n">2</span>
-        <h3>Screening</h3>
-        <p>Can a cheap ML signal decide which materials deserve an expensive calculation? Judged against thousands of
-          first-principles transport calculations.</p>
+        <h3>Match experiment</h3>
+        <p>Measured thermal conductivity is scarce and calculations overestimate it. I built a dataset of
+          experimental values from the literature and trained a model to predict the measured value, which I then
+          applied to 10 unmeasured half-Heusler compounds [<a href="#publications">P2</a>].</p>
       </li>
       <li>
         <span class="theme-n">3</span>
-        <h3>Experiment</h3>
-        <p>Do calculations agree with measurement? Finding and correcting the bias that ML surrogates inherit from the
-          calculations they are trained on.</p>
+        <h3>Explore new chemistry</h3>
+        <p>At NIMS, I am extending this search to unexplored alkali- and alkaline-earth Heusler chemistries with
+          pretrained interatomic potentials. For my PhD, I want to build machine learning that finds new
+          materials reliably.</p>
       </li>
     </ol>
   </section>
